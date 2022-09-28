@@ -30,6 +30,20 @@
         }
     }
     ```
+5. Configure your `tailwind.config.js` file:
+    1. 
+    ```javascript
+    /** @type {import('tailwindcss').Config} */
+    module.exports = {
+    content: [
+        "./src/**/*.{html,js,ts,jsx,tsx}",
+    ],
+    theme: {
+        extend: {},
+    },
+    plugins: [],
+    }
+    ```
 
 ** Edit the HTML File and CSS File **
 
