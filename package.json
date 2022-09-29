@@ -1,25 +1,18 @@
 {
   "name": "cisc288-tailwindnpm",
   "version": "1.0.0",
-  "description": "** Clone Repository **",
-  "main": "index.js",
+  "description": "Simple NPM Starter",
+  "source": "src/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run clean && parcel src/index.html src/example/index.html",
+    "build": "npm run clean && parcel build",
+    "clean": "rimraf dist .parcel-cache"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SpringfieldCollege-MPCS/CISC288-TailwindNPM.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SpringfieldCollege-MPCS/CISC288-TailwindNPM/issues"
-  },
-  "homepage": "https://github.com/SpringfieldCollege-MPCS/CISC288-TailwindNPM#readme",
+  "license": "MIT",
   "devDependencies": {
     "parcel": "^2.7.0",
     "postcss": "^8.4.16",
+    "rimraf": "^3.0.2",
     "tailwindcss": "^3.1.8"
   }
 }

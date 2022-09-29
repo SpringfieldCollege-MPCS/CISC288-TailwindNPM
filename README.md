@@ -3,7 +3,7 @@
 
 # Instructions
 
-** Clone Repository **
+**Clone Repository**
 
 1. `git clone https://github.com/SpringfieldCollege-MPCS/CISC288-TailwindNPM.git`
 2. `cd CISC288-TailwindNPM`
@@ -16,7 +16,7 @@
 4. `touch src/index.html` - create the first html file
 4. `touch src/index.css` - create the first css file
 
-** Install Tailwind CSS and PostCSS **
+**Install Tailwind CSS and PostCSS**
 
 1. `npm install -D tailwindcss postcss` - Installs tailwind and postcss
 2. `npx tailwindcss init` - creates your tailwind configuration file
@@ -45,7 +45,7 @@
     }
     ```
 
-** Edit the HTML File and CSS File **
+**Edit the HTML File and CSS File**
 
 1. Edit your `src/index.html` file:
     1. 
@@ -76,3 +76,35 @@
 *** Run Software ***
 
 1. `npm parcel src/index.html`
+
+
+**NPM Scripts**
+
+Update your `package.json` to use npm scripts:
+
+```json
+{
+  "name": "cisc288-tailwindnpm",
+  "version": "1.0.0",
+  "description": "Simple NPM Starter",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
+    "clean": "rimraf dist"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.7.0",
+    "postcss": "^8.4.16",
+    "rimraf": "^3.0.2",
+    "tailwindcss": "^3.1.8"
+  }
+}
+```
+
+afterwards run `npm install`. Now you can do the following to run your software:
+
+1. `npm run start` - will start development server
+2. `npm run build` - will build our finall producation and optimized files
+3. `npm run `
